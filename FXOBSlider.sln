@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXOBSlider.Demo", "FXOBSlider.Demo\FXOBSlider.Demo.csproj", "{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A3FE57BC-19D2-4F8D-B262-05211E5AF496}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.mdown = README.mdown
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Release|iPhone.Build.0 = Release|iPhone
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7BFCE436-8F3D-49D5-A53F-E933BEECEA75}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FXOBSlider.Demo\FXOBSlider.Demo.csproj
+	EndGlobalSection
+EndGlobal

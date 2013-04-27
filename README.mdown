@@ -1,0 +1,56 @@
+# FXOBSlider
+
+Written by [Francois-Xavier Beckers](http://fxbeckers.com), April 2013.
+
+Adapted from OBSlider (https://github.com/ole/OBSlider) written by [Ole Begemann](http://oleb.net), January 2011.
+
+A `UISlider` subclass that adds variable scrubbing speeds (as seen in the iPod app on iOS) to `UISlider`.
+
+
+## Usage
+
+Copy `FXOBSlider.cs` to your project and instantiate an `OBSlider` wherever you would use a `UISlider`. If you create the slider in Interface Builder, set its class to `FXOBSlider` on the Identity tab.
+
+The slider works with variable scrubbing speeds out of the box. In the action method you have assigned to `UIControlEventValueChanged`, you can access the `scrubbingSpeed` variable to get the current scrubbing speed. `Scrubbing `scrubbingSpeed` is a `float` where `1.0f` is the normal scrubbing speed.
+
+To modify which scrubbing speed should be set at which vertical offset position of the user's touch, you can modify the `scrubbingSpeeds` and `scrubbingSpeedChangePositions` arrays. Both arrays should contain the same number of objects. `scrubbingSpeedChangePositions` should indicate the vertical offsets at which scrubbing speed changes should take place in ascending order. The first entry in this array should always be `0.0f`. `scrubbingSpeeds` should contain the actual values for the scrubbing speed that correspond to the offset positions.
+
+The default values for the two arrays are:
+
+    ScrubbingSpeeds = new [] { 1f, 0.5f, 0.25f, 0.1f }
+
+    ScrubbingSpeedsChangePositions = new [] { 0f, 50f, 100f, 150f };
+
+(That is, scrubbing speed changes from 100% to 50% to 25% to 10% when the user moves the finger upward/downward by 50.0/100.0/150.0 points, respectively.)
+
+
+## Requirements
+
+`OBSlider` 1.0.0 (tagged with 1.0.0) works in iOS 3.0+.
+
+With version 1.1.0 (tagged 1.1.0) I converted the source code to Automatic Reference Counting (ARC) and raised the deployment target of the demo app to iOS 5.0. If you want to support earlier iOS versions, please check out the 1.0.0 tag.
+
+
+## Demo
+
+Open the demo project `FXOBSlider.sln` in Xamarin Studio and run it on an iPhone or the iPhone Simulator. Drag the slider around and, while dragging, move your finger upwards/downwards to adjust the scrubbing speed.
+
+
+## Untested
+
+The class is basically untested. Please report bugs via the issue tracker on GitHub.
+
+
+## License
+
+Licensed under the MIT license. You can use the code in your commercial and non-commercial projects.
+
+## Contributors
+
+* [Francois-Xavier Beckers](https://github.com/fxbeckers)
+* [Ole Begemann](https://github.com/ole)
+* [David Linsin](https://github.com/dlinsin): iOS 3.x compatibility
+* [Sylver Bruneau](https://github.com/sylverb): iPod.app-like slider behavior (as you drag towards the slider, the thumb meets your finger at the slider)
+* [Brad Sokol](https://github.com/bradsokol): Position the thumb more precisely when the user drags their finger back towards the slider
+
+Thanks!
